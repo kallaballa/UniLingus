@@ -90,7 +90,7 @@ int main(int argc, char** argv) {
   po::notify(vm);
 
   if (vm.count("help")) {
-    std::cerr << "Usage: eagereye [options] <population file>\n";
+    std::cerr << "Usage: unilingus [options]\n";
     std::cerr << visible;
     return 0;
   }
@@ -135,7 +135,6 @@ int main(int argc, char** argv) {
           last = findNext(last, token.at(i), mc);
           std::wcout << last;
         }
-      //std::cerr << mc.probability(line) << '\t' << line << std::endl;
         std::wcout << " ";
       }
       std::wcout << std::endl;
